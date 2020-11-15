@@ -1,48 +1,44 @@
 'use strict';
 
 // I feel that I am mixing something up.  I want to get information from desired API's like the following:
-// var request = new urlRequest();
-// request.open('GET', 'https://SomeAPI.com/WhateverIWantForInformation', true);
-// request.onload = function (){
-//     Some function code here, right...
+// var search = new XMLHttpRequest();
+// search.open('GET', 'https://SomeAPI.com/WhateverIWantForInformation', true);
+// search.onload = function (){
+//     Some function code here, to get images/information to poulate in "Result Photos" section, right...
 // };
 
 
-// I think Hasan is using Core $.ajax(...); method.  I am struggling with this; and I hope to resolve my thought process tonight; or by Monday 11/14/20, with my Tutor's assistance.  My Ref. Link is: https://learn.jquery.com/ajax/jquery-ajax-methods/ //
+// I think Hasan is using Core $.ajax(...); method.  I am struggling with this; and I hope to resolve my thought process tonight; or by Monday 11/14/20, with my Tutor's assistance.  My Ref. Links are: https://learn.jquery.com/ajax/jquery-ajax-methods/; and https://api.jquery.com/jQuery.ajax/ //
+var search = new XMLHttpRequest(); // XMLHttpRequest is to much to type, using knwon abbr. "XHR." //
+
 $.ajax({
  
-    // 
-    url: "post.php",
- 
-    // The data to send (will be converted to a query string)
+    // Okay, I think this is where I need to put my API, right? //
+    url: "https://images-api.nasa.gov/", // Going to test an API here. //
     data: {
-        id: 123
+        id: row // Check HTML file. //
     },
- 
-    // Whether this is a POST or GET request
     type: "GET",
- 
-    // The type of data we expect back
     dataType : "json",
-})
-  // Code to run if the request succeeds (is done);
-  // The response is passed to the function
+}),
+
+  // Where response passes to function; and my function for the search query should run (if I did it right U+1F4AB, smh)
   .done(function( json ) {
-     $( "<h1>" ).text( json.title ).appendTo( "body" );
-     $( "<div class=\"content\">").html( json.html ).appendTo( "body" );
-  })
-  // Code to run if the request fails; the raw request and
-  // status codes are passed to the function
-  .fail(function( xhr, status, errorThrown ) {
-    alert( "Sorry, there was a problem!" );
+     $( "<h3 class="foundThis">" ).text( json.title ).appendTo( "body" );
+     $( "<div class="col-sm bg-warning ml-1 mb-1 d-flex align-items-end  flex-row" style="height:200px">").html( json.html ).appendTo( "body" ); // THIS IS WHY I 'USE STRICT': I believe the double quotes are messing me up. //
+  });
+
+  // I need a function just in case whatever is being queried in my search is not found (or my code just doesn't works). // 
+  .fail(function( myXHR, status, errorThrown ) {
+    alert( "Sorry, my code needs peer review!" );
     console.log( "Error: " + errorThrown );
     console.log( "Status: " + status );
-    console.dir( xhr );
   })
-  // Code to run regardless of success or failure;
-  .always(function( xhr, status ) {
+  // I need a function that will tell the user "I found the information you need"; or "I Can't find what you're looking for." aka "My code stinks"- oh, no, lol! //
+  .always(function( myXHR, status ) {
     alert( "The request is complete!" );
   });
+
 
 
 // Hasan's template below. //
