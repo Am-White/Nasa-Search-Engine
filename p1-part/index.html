@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>tester</title>
+</head>
+<body>
+    <form>
+        <input id="newInput" placeholder="Search">
+        <button id="send" type="submit">
+            <i class="fas fa-search text-white"></i>
+        </button>
+    </form>
+
+    <div id="content" class="col-lg-4"></div>
+    <img id="dayPic">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $("#send").on("click", function(event) {
+            event.preventDefault();
+
+            var inputEl = $("#newInput").val();
+            var wikiURL = "https://en.wikipedia.org/api/rest_v1/page/summary/" + inputEl;
+
+            $.ajax({
+                url: wikiURL,
+                method: "GET"
+            }).then(function(response) {
+                console.log(response);
+
+                var description = $("<p>").text(response.extract);
+                $("#content").empty();
+                $("#content").append(description);
+            });
+
+            var dayImg = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+
+            $.ajax({
+                url: dayImg,
+                method: "GET"
+            }).then(function(response2) {
+                console.log(response2);
+
+                $("#dayPic").empty();
+                $("#dayPic").attr("src", response2.url);
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
