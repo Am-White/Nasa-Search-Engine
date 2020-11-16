@@ -1,0 +1,39 @@
+
+/*-----------------------*/
+.header-container {
+    height: 500px;
+    margin: 0;
+}
+
+.header {
+    position: sticky; 
+    margin-bottom: 50px;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pod {
+    display: block flex;
+    /* position */
+}
+
+.card .button:hover .icon{
+    color: rgb(206, 26, 26);
+}
+
+.fav-img {
+    display: block flex;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: rgb(209, 179, 134) 7px;
+    border-style: double;
+}
+
+
+
+

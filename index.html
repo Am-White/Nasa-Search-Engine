@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html id="page">
+   <head>
+      <title>Getting Started with Cirrus</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <meta charset="UTF-8"/>
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
+      <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" ></script> 
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script src="assets/js/script.js"></script>
+   </head>
+
+   <body style="background-image: url(assets/solo-stars.jpg)">
+        <!--Header Img-->
+        <div class="header-container u-position-static" style="background-image: url(assets/earth.jpg)">
+            <div class="header-brand" >
+                <h1>SPACE IS THE PLACE</h1>
+            </div>
+        </div>
+
+        <!--Header Nav-->
+        <div class="header unselectable header-animated">
+            <div class="header-brand">
+               <div class="nav-item no-hover">
+                  <h6 class="title">NASA Search Engine</h6>
+               </div>
+               <div class="nav-item nav-btn" id="header-btn"> <span></span> <span></span> <span></span> </div>
+            </div>
+
+        <!--Nav Menu-->
+            <div class="header-nav" id="header-menu">
+               <div class="nav-left">
+                  <div class="nav-item text-center"> <a href="#"> <span class="icon"> <i class="fas fal fa-space-shuttle fa-2x" aria-hidden="true"></i> </span> </a> </div>
+               </div>
+    
+               <div class="nav-right">
+                <div class="input-control" style="width: 300px;">
+                    <input type="text" placeholder="Enter Keywords (Ex. Moon)"></input>
+                </div>
+
+                  <div class="nav-item has-sub toggle-hover" id="dropdown">
+                     <a class="nav-dropdown-link">Menu</a> 
+                     <ul class="dropdown-menu dropdown-animated" role="menu">
+                        <li role="menu-item"><a href="#">First Item</a></li>
+                        <li role="menu-item"><a href="#">Second Item</a></li>
+                        <li role="menu-item"><a href="#">Third Item</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+    <main class="grid grid-gap-3 u-text-center">
+        <!--Picture of the Day-->
+         
+            <div class="pod grid-c-4 grid-r-6" style="border: 2px rgb(241, 239, 239) solid;">
+                <p style="background-color: aliceblue; color: black;"><b>Picture of the Day</b></p>
+
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(https://images.unsplash.com/photo-1467952497026-86722ef1916f?dpr=1.25&amp;auto=compress,format&amp;fit=crop&amp;w=1199&amp;h=799&amp;q=80&amp;cs=tinysrgb&amp;crop=)"></div>
+                    </div>
+                    <div class="content">
+                        <div class="space"></div>
+                        <div class="tile tile--center">
+                
+                            <div class="tile__container">
+                                <h1>Picture of the Day</h1>
+                            </div>
+                        </div>
+                        <p>Information about this picture <a href="!#">#space</a></p>
+                    </div>
+
+                    <div class="card-footer level content">
+                        TODAYS DATE
+                        <div class="u-pull-right">
+                            <div class="level-right ignore-screen">
+                                <a class="level-item">
+                                    <span class="icon"><i class="fa fa-wrapper small fa-reply" aria-hidden="true"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon"><i class="fa fa-wrapper small fa-retweet" aria-hidden="true"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon"><i class="fa fa-wrapper small fa-heart" aria-hidden="true"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        <!--Welcome Message-->
+            <div class="welcome grid-c-8 grid-r-3" style="border: 2px rgb(247, 243, 243) solid;">
+                <p style="background-color: aliceblue; color: black;"><b>Welcome</b></p>
+            </div>
+            
+        <!--Results of Search-->
+            <div class="results grid-r-3 grid-c-8" style="border: 2px rgb(241, 235, 235) solid;">
+                <p style="background-color: aliceblue; color: black;"><b>Results</b></p>
+
+                <div class="card slide-up" style="max-width: 300px;">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">Kangaroo Valley Safari</p>
+                                    <p class="tile__subtitle">By John Doe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>Located two hours south of Sydney in the Southern Highland of New South Wales...</p>
+                    </div>
+                    
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="card slide-up" style="max-width: 300px;">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">Kangaroo Valley Safari</p>
+                                    <p class="tile__subtitle">By John Doe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>Located two hours south of Sydney in the Southern Highland of New South Wales...</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        <!--Favorites-->
+            <div class="favorites grid-c-12 grid-cols-3" style="border: 2px rgb(245, 236, 236) solid;">
+                <p style="background-color: aliceblue; color: black;"><b>Favorited Images</b></p>
+
+                <div class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                
+            </div>
+    </main>
+
+        <!--Footer-->
+        <footer class="footer" style="background-image: url(assets/earth.jpg)">
+            <h6 class="footer__title white uppercase">Logo</h6>
+            <div class="content">
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <ul class="no-bullets">
+                            <a href="!#">
+                                <li class="footer__list-item">Home</li>
+                            </a>
+                            <a href="!#">
+                                <li class="footer__list-item">Sign Up</li>
+                            </a>
+                            <a href="!#">
+                                <li class="footer__list-item">Downloads</li>
+                            </a>
+                            <ul>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="no-bullets">
+                            <a href="!#">
+                                <li class="footer__list-item">Company Information</li>
+                            </a>
+                            <a href="!#">
+                                <li class="footer__list-item">Contact Us</li>
+                            </a>
+                            <a href="!#">
+                                <li class="footer__list-item">Reviews</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="no-bullets">
+                            <a href="!#">
+                                <li class="footer__list-item">FAQ</li>
+                            </a>
+                            <a href="!#">
+                                <li class="footer__list-item">Help Desk</li>
+                            </a>
+                            <a href="!#">
+                                <li class="footer__list-item">Forums</li>
+                            </a>
+                            <ul>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="subtitle">Company © 2018.</p>
+        </footer>
+
+   </body>
+</html>
