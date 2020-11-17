@@ -14,8 +14,8 @@
         }      
 
         .img-resize {
-            width: 30%;
-            height: 30%;
+            width: 40%;
+            height: 40%;
         } 
     </style>
 </head>
@@ -53,20 +53,19 @@
                 $("#content").empty();
                 $("#content").append(description);
             });
+        });
 
-            var today = moment().format("YYYY-MM-DD");
-            var dayImg = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=" + today;
+        var today = moment().format("YYYY-MM-DD");
+        var dayImg = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=" + today;
 
-            $.ajax({
-                url: dayImg,
-                method: "GET"
-            }).then(function(response2) {
-                console.log(response2);
+        $.ajax({
+            url: dayImg,
+            method: "GET"
+        }).then(function(response2) {
+            console.log(response2);
 
-                $("#dayPic").empty();
-                $("#dayPic").attr("src", response2.url);
-            });
-
+            $("#dayPic").empty();
+            $("#dayPic").attr("src", response2.url);
         });
 
     </script>
