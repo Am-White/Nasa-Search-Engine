@@ -1,0 +1,42 @@
+
+/*-----------------------*/
+.header-container {
+    height: 500px;
+    margin: 0;
+}
+
+.header {
+    position: sticky; 
+    margin-bottom: 50px;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.card .button:hover .icon{
+    color: rgb(206, 26, 26);
+}
+.card-big {
+    width: 350px;
+}
+.info-card {
+    width: 600px;
+}
+.reg-card {
+    width: 300px;
+}
+
+.fav-img {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: rgb(209, 179, 134) 7px;
+    border-style: double;
+}
+
