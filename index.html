@@ -15,6 +15,7 @@
       <script src="assets/js/script.js"></script>
    </head>
 
+   <!--Body and Main-->
    <body style="background-image: url(assets/solo-stars.jpg)">
         <!--Header Img-->
         <div class="header-container u-position-static" style="background-image: url(assets/earth.jpg)">
@@ -46,9 +47,9 @@
                   <div class="nav-item has-sub toggle-hover" id="dropdown">
                      <a class="nav-dropdown-link">Menu</a> 
                      <ul class="dropdown-menu dropdown-animated" role="menu">
-                        <li role="menu-item"><a href="#">First Item</a></li>
-                        <li role="menu-item"><a href="#">Second Item</a></li>
-                        <li role="menu-item"><a href="#">Third Item</a></li>
+                        <li role="menu-item"><a href="#">Favorite Images</a></li>
+                        <li role="menu-item"><a href="#">Links</a></li>
+                        <li role="menu-item"><a href="#">Credits</a></li>
                      </ul>
                   </div>
                </div>
@@ -59,7 +60,7 @@
     <main class="grid grid-gap-3 u-text-center">
         <!--Picture of the Day-->
          
-            <div class="pod grid-c-4 grid-r-6" style="border: 2px rgb(241, 239, 239) solid;">
+            <div id="pic-od" class="pod grid-c-4 grid-r-6" style="border: 2px rgb(241, 239, 239) solid;">
                 <p style="background-color: aliceblue; color: black;"><b>Picture of the Day</b></p>
 
                 <div class="card">
@@ -94,6 +95,22 @@
                         </div>
                     </div>
                 </div>
+                <!--Favorites-->
+            <div class="fav-imgs grid-c-4 grid-r-6" style="border: 2px rgb(245, 236, 236) solid;">
+                <p style="background-color: aliceblue; color: black;"><b>Favorited Images</b></p>
+            
+            <div class="row">
+                <div id="fav-1" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-2" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-3" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-4" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-5" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-6" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-7" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-8" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+                <div id="fav-9" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
+            </div>   
+            </div>
             </div>
             
 
@@ -105,8 +122,24 @@
         <!--Results of Search-->
             <div class="results grid-r-3 grid-c-8" style="border: 2px rgb(241, 235, 235) solid;">
                 <p style="background-color: aliceblue; color: black;"><b>Results</b></p>
+            
+                <!--Rows-->   
+            <div class="wrap-cards row" style="justify-content: space-between;">
+                
+                <!--Info Card-->
+                <div class="card" id="info-card">
+                    <div class="content info-card u-text-center pt-3">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bolt" class="svg-inline--fa fa-bolt fa-w-10 fa-wrapper text-blue-600 bg-blue-100 p-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="border-radius: 100%; height: 4.75rem; width: 4.75rem;">
+                            <path fill="currentColor" d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path>
+                        </svg>
+                        <p id="projectname" class="title mt-2 mb-0">Search Title</p>
+                        <p>Basic information on what keyword the user just searched.</p>
+                    </div>
+                </div>
 
-                <div class="card slide-up" style="max-width: 300px;">
+                <!--Regular size Cards-->
+                <!--Card 1-->
+                <div class="reg-card card slide-up" id="card-1">
                     <div class="card-container">
                         <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
                     </div>
@@ -114,14 +147,14 @@
                         <div class="content">
                             <div class="tile">
                                 <div class="tile__container">
-                                    <p class="tile__title">Kangaroo Valley Safari</p>
-                                    <p class="tile__subtitle">By John Doe</p>
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-body content">
-                        <p>Located two hours south of Sydney in the Southern Highland of New South Wales...</p>
+                        <p>information on image searched</p>
                     </div>
                     
                     <button class="button">
@@ -131,7 +164,8 @@
                     </button>
                 </div>
 
-                <div class="card slide-up" style="max-width: 300px;">
+                <!--Card 2-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-2">
                     <div class="card-container">
                         <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
                     </div>
@@ -139,14 +173,144 @@
                         <div class="content">
                             <div class="tile">
                                 <div class="tile__container">
-                                    <p class="tile__title">Kangaroo Valley Safari</p>
-                                    <p class="tile__subtitle">By John Doe</p>
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-body content">
-                        <p>Located two hours south of Sydney in the Southern Highland of New South Wales...</p>
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Three-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-3">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Four-->
+                <div class="reg-card card slide-up" style="max-width: 300px;"id="card-4">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Five-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-5">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Six-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-6">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Seven-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-7">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
                     </div>
 
                     <button class="button">
@@ -156,17 +320,10 @@
                     </button>
                 </div>
             </div>
-
-        <!--Favorites-->
-            <div class="favorites grid-c-12 grid-cols-3" style="border: 2px rgb(245, 236, 236) solid;">
-                <p style="background-color: aliceblue; color: black;"><b>Favorited Images</b></p>
-
-                <div class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                
             </div>
     </main>
+
+
 
         <!--Footer-->
         <footer class="footer" style="background-image: url(assets/earth.jpg)">
@@ -178,13 +335,13 @@
                     <div class="col-4">
                         <ul class="no-bullets">
                             <a href="!#">
-                                <li class="footer__list-item">Home</li>
+                                <li class="footer__list-item">Favorites</li>
                             </a>
                             <a href="!#">
-                                <li class="footer__list-item">Sign Up</li>
+                                <li class="footer__list-item">Credits/Links</li>
                             </a>
                             <a href="!#">
-                                <li class="footer__list-item">Downloads</li>
+                                <li class="footer__list-item">Other</li>
                             </a>
                             <ul>
                             </ul>
@@ -220,7 +377,7 @@
                     </div>
                 </div>
             </div>
-            <p class="subtitle">Company © 2018.</p>
+            <p class="subtitle"> © 2020.</p>
         </footer>
 
    </body>
