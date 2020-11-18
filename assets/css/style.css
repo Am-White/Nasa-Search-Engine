@@ -38,5 +38,6 @@ main {
     overflow: hidden;
     border: rgb(209, 179, 134) 7px;
     border-style: double;
+    margin-left: 8px;
 }
 
