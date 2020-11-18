@@ -15,10 +15,12 @@
       <script src="assets/js/script.js"></script>
    </head>
 
+   
    <!--Body and Main-->
    <body style="background-image: url(assets/solo-stars.jpg)">
+
         <!--Header Img-->
-        <div class="header-container u-position-static" style="background-image: url(assets/earth.jpg)">
+        <div class="header-container u-position-static" style="background-image: url(assets/earth.jpg); width: 100%;">
             <div class="header-brand" >
                 <h1>SPACE IS THE PLACE</h1>
             </div>
@@ -28,7 +30,7 @@
         <div class="header unselectable header-animated">
             <div class="header-brand">
                <div class="nav-item no-hover">
-                  <h6 class="title">NASA Search Engine</h6>
+                  <h2 class="title">NASA Search Engine</h2>
                </div>
                <div class="nav-item nav-btn" id="header-btn"> <span></span> <span></span> <span></span> </div>
             </div>
@@ -48,24 +50,25 @@
                      <a class="nav-dropdown-link">Menu</a> 
                      <ul class="dropdown-menu dropdown-animated" role="menu">
                         <li role="menu-item"><a href="#">Favorite Images</a></li>
-                        <li role="menu-item"><a href="#">Links</a></li>
-                        <li role="menu-item"><a href="#">Credits</a></li>
+                        <li role="menu-item"><a href="#">Developers</a></li>
                      </ul>
                   </div>
                </div>
             </div>
          </div>
 
-
+    <!--Main-->
     <main class="grid grid-gap-3 u-text-center">
-        <!--Picture of the Day-->
-         
-            <div id="pic-od" class="pod grid-c-4 grid-r-6" style="border: 2px rgb(241, 239, 239) solid;">
-                <p style="background-color: aliceblue; color: black;"><b>Picture of the Day</b></p>
 
-                <div class="card">
+            <!--Picture of the Day-->
+            <div id="pic-od" class="pod grid-c-4 grid-r-6">
+                <p style="background-color: aliceblue; color: black; border-radius: 5px; margin-bottom: 0;"><b>Picture of the Day</b></p>
+
+                <div class="card"  style="background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(https://images.unsplash.com/photo-1467952497026-86722ef1916f?dpr=1.25&amp;auto=compress,format&amp;fit=crop&amp;w=1199&amp;h=799&amp;q=80&amp;cs=tinysrgb&amp;crop=)"></div>
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
                     </div>
                     <div class="content">
                         <div class="space"></div>
@@ -78,60 +81,62 @@
                         <p>Information about this picture <a href="!#">#space</a></p>
                     </div>
 
-                    <div class="card-footer level content">
+                    <div class="card-footer level content u-center">
                         TODAYS DATE
-                        <div class="u-pull-right">
-                            <div class="level-right ignore-screen">
-                                <a class="level-item">
-                                    <span class="icon"><i class="fa fa-wrapper small fa-reply" aria-hidden="true"></i></span>
-                                </a>
-                                <a class="level-item">
-                                    <span class="icon"><i class="fa fa-wrapper small fa-retweet" aria-hidden="true"></i></span>
-                                </a>
-                                <a class="level-item">
-                                    <span class="icon"><i class="fa fa-wrapper small fa-heart" aria-hidden="true"></i></span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!--Favorites-->
-            <div class="fav-imgs grid-c-4 grid-r-6" style="border: 2px rgb(245, 236, 236) solid;">
-                <p style="background-color: aliceblue; color: black;"><b>Favorited Images</b></p>
-            
-            <div class="row">
-                <div id="fav-1" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-2" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-3" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-4" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-5" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-6" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-7" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-8" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-                <div id="fav-9" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt="Photo"></a></div>
-            </div>   
-            </div>
-            </div>
-            
-
+            <div class="fav-imgs grid-c-4 grid-r-6">
+                <p style="background-color: aliceblue; color: black; border-radius: 5px; margin-bottom: 0;"><b>Favorited Images</b></p>
+                
+                <section style="background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
+                    <div class="row u-center">
+                        <div id="fav-1" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-2" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-3" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-4" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-5" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-6" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-7" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-8" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-9" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+    
+                    </div>   
+                    </div>
+                    </div>
+                </section>
+                
         <!--Welcome Message-->
-            <div class="welcome grid-c-8 grid-r-3" style="border: 2px rgb(247, 243, 243) solid;">
-                <p style="background-color: aliceblue; color: black;"><b>Welcome</b></p>
+            <div class="welcome grid-c-8 grid-r-3">
+                <h2 style="background-color: aliceblue; color: black;border-radius: 5px; margin-bottom: 0;"><b>Welcome</b></h2>
+                <div style="background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
+                    <p style="background-color: aliceblue; opacity: 100%; padding: 10px;">
+                     Please welcome yourself to the final frontier, here you can enter any word into the search engine and blast off to your results.
+                     You will discover images of the universe beyond and information on these wonders. Feel free to like your favorite images with
+                     the heart button, they will be added to your collection for a later date.
+                    </br>
+                    Somewhere among the stars on this page, there is a hidden button that will blast you to a wonderful super nova of knowledge. Launch
+                    if you dare.
+                    </p>
+                </div>
             </div>
             
         <!--Results of Search-->
-            <div class="results grid-r-3 grid-c-8" style="border: 2px rgb(241, 235, 235) solid;">
-                <p style="background-color: aliceblue; color: black;"><b>Results</b></p>
+            <div class="results grid-r-3 grid-c-8">
+                <p style="background-color: aliceblue; color: black; border-radius: 5px; margin-bottom: 0;"><b>Results</b></p>
             
-                <!--Rows-->   
-            <div class="wrap-cards row" style="justify-content: space-between;">
-                
+            <!--Rows-->   
+            <div class="wrap-cards row " style="justify-content: space-between; background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
+             
                 <!--Info Card-->
                 <div class="card" id="info-card">
                     <div class="content info-card u-text-center pt-3">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bolt" class="svg-inline--fa fa-bolt fa-w-10 fa-wrapper text-blue-600 bg-blue-100 p-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="border-radius: 100%; height: 4.75rem; width: 4.75rem;">
-                            <path fill="currentColor" d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path>
-                        </svg>
+                        
+                        <div class="info-icon "> 
+                            <a href="#"> 
+                            <i class="fas fa-user-astronaut fa-2x text-blue-600 bg-blue-100 p-3" viewBox="0 0 320 512" style="border-radius: 100%; height: 4.75rem; width: 4.75rem;" aria-hidden="true">
+                            </i> </a> 
+                        </div>
                         <p id="projectname" class="title mt-2 mb-0">Search Title</p>
                         <p>Basic information on what keyword the user just searched.</p>
                     </div>
@@ -141,7 +146,8 @@
                 <!--Card 1-->
                 <div class="reg-card card slide-up" id="card-1">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                        <div class="card-image"> 
+                            <img src="" alt=""></div>
                     </div>
                     <div class="mobile-title">
                         <div class="content">
@@ -167,7 +173,8 @@
                 <!--Card 2-->
                 <div class="reg-card card slide-up" style="max-width: 300px;" id="card-2">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                        <div class="card-image">
+                            <img src="" alt=""></div>
                     </div>
                     <div class="mobile-title">
                         <div class="content">
@@ -193,7 +200,9 @@
                 <!--Card Three-->
                 <div class="reg-card card slide-up" style="max-width: 300px;" id="card-3">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
                     </div>
                     <div class="mobile-title">
                         <div class="content">
@@ -219,7 +228,9 @@
                 <!--Card Four-->
                 <div class="reg-card card slide-up" style="max-width: 300px;"id="card-4">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
                     </div>
                     <div class="mobile-title">
                         <div class="content">
@@ -245,7 +256,9 @@
                 <!--Card Five-->
                 <div class="reg-card card slide-up" style="max-width: 300px;" id="card-5">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
                     </div>
                     <div class="mobile-title">
                         <div class="content">
@@ -271,7 +284,9 @@
                 <!--Card Six-->
                 <div class="reg-card card slide-up" style="max-width: 300px;" id="card-6">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
                     </div>
                     <div class="mobile-title">
                         <div class="content">
@@ -297,7 +312,93 @@
                 <!--Card Seven-->
                 <div class="reg-card card slide-up" style="max-width: 300px;" id="card-7">
                     <div class="card-container">
-                        <div class="card-image" style="background-image: url(&quot;https://unsplash.it/640/480?random&amp;blur&quot;);"></div>
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Eight-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-8">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Nine-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-9">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        <p>information on image searched.</p>
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Ten-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-10">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
                     </div>
                     <div class="mobile-title">
                         <div class="content">
@@ -321,27 +422,28 @@
                 </div>
             </div>
             </div>
+            
     </main>
 
 
 
         <!--Footer-->
         <footer class="footer" style="background-image: url(assets/earth.jpg)">
-            <h6 class="footer__title white uppercase">Logo</h6>
+            <h6 class="footer__title white uppercase">Meet the Developers</h6>
             <div class="content">
                 <div class="divider"></div>
 
                 <div class="row">
                     <div class="col-4">
                         <ul class="no-bullets">
-                            <a href="!#">
-                                <li class="footer__list-item">Favorites</li>
+                            <h4>
+                                <li class="footer__list-item"><strong>Front End</strong></li>
+                            </h4>
+                            <a href="https://github.com/Am-White">
+                                <li class="footer__list-item">Amethyst White</li>
                             </a>
                             <a href="!#">
-                                <li class="footer__list-item">Credits/Links</li>
-                            </a>
-                            <a href="!#">
-                                <li class="footer__list-item">Other</li>
+                                <li class="footer__list-item">Chetan Sekhon</li>
                             </a>
                             <ul>
                             </ul>
@@ -350,26 +452,29 @@
                     <div class="col-4">
                         <ul class="no-bullets">
                             <a href="!#">
-                                <li class="footer__list-item">Company Information</li>
+                                <li class="footer__list-item"></li>
                             </a>
                             <a href="!#">
-                                <li class="footer__list-item">Contact Us</li>
+                                <li class="footer__list-item"></li>
                             </a>
                             <a href="!#">
-                                <li class="footer__list-item">Reviews</li>
+                                <li class="footer__list-item"></li>
                             </a>
                         </ul>
                     </div>
                     <div class="col-4">
                         <ul class="no-bullets">
+                            <h4>
+                                <li class="footer__list-item"><strong>Back End</strong></li>
+                            </h4>
                             <a href="!#">
-                                <li class="footer__list-item">FAQ</li>
+                                <li class="footer__list-item">Frederick Thomas</li>
                             </a>
-                            <a href="!#">
-                                <li class="footer__list-item">Help Desk</li>
+                            <a href="https://github.com/hhutku">
+                                <li class="footer__list-item">Hasan Utku-win</li>
                             </a>
-                            <a href="!#">
-                                <li class="footer__list-item">Forums</li>
+                            <a href="https://github.com/ywen26">
+                                <li class="footer__list-item">Yuwen Yu</li>
                             </a>
                             <ul>
                             </ul>

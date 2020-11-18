@@ -1,42 +1,53 @@
 
 /*-----------------------*/
+/*header image */
 .header-container {
     height: 500px;
     margin: 0;
 }
-
+/*nav bar sticky when scroll */
 .header {
     position: sticky; 
-    margin-bottom: 50px;
+    top: 0;
+    width: 100%;  
 }
 
 main {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+/*picture of the day*/
+.pod {
+margin-right: 20px;
+}
 
-
+/*like button on result cards */
 .card .button:hover .icon{
     color: rgb(206, 26, 26);
 }
-.card-big {
-    width: 350px;
-}
+
+/*cards inside result category*/
 .info-card {
     width: 600px;
 }
+
+.card-big {
+    width: 350px;
+}
+
 .reg-card {
     width: 300px;
 }
-
+/*favorite images section and spacing */
 .fav-img {
-    display: block;
-    position: relative;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border: rgb(209, 179, 134) 7px;
-    border-style: double;
+    padding-bottom: 5px;
 }
 
+.fav-img img {
+    float: left;
+    width:  120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5%;
+ }
