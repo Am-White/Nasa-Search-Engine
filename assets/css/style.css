@@ -24,10 +24,12 @@ main {
     width: 350px;
 }
 .info-card {
-    width: 600px;
+    width: 824px;
+    margin: 0 auto; 
 }
 .reg-card {
     width: 300px;
+
 }
 
 .fav-img {
