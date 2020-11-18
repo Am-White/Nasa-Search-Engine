@@ -33,7 +33,7 @@ main {
 .fav-img {
     display: block;
     position: relative;
-    width: 150px;
+    width: 130px;
     height: 150px;
     overflow: hidden;
     border: rgb(209, 179, 134) 7px;
