@@ -1,3 +1,4 @@
+
 var url = "https://images-api.nasa.gov/search?q=";
 
 $('div[class="results grid-r-3 grid-c-8"]').attr("style","display:none");
