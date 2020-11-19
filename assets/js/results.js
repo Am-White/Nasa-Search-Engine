@@ -13,7 +13,7 @@ function nasaImageSearch() {
         console.log(response);
         
         for (i = 1; i < 11; i++) {
-            // $('card' + i).next("div").text(response.collection.items[i].data[0].title);
+            
             var title = response.collection.items[i].data[0].title;
             var links = response.collection.items[i].links[0].href;
             var description = response.collection.items[i].data[0].description;
