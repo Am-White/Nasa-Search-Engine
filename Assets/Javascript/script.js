@@ -1,39 +1,33 @@
-'use strict';
+var url = "https://images-api.nasa.gov/search?q=";
 
-var search = "Jupiter";
+$('div[class="results grid-r-3 grid-c-8"]').attr("style","display:none");
 
-// Relaxed AJAX //
-function nasaImageSearch(search) {
-  $.ajax({
-    type: "GET",
-    url: "https://images-api.nasa.gov/search?q=" + search + "&appid=", // DO I NEED API KEY FOR NASA??? //
-    dataType: "JSON",
+function nasaImageSearch() {
+    $.ajax({
+        url: url + $('input[type="text"]').val(),
+        method: 'GET',
+        dataType: 'json',
+    }).then(function (response) {
+        console.log("ress")
+        console.log(response);
+        
+        for (i = 1; i < 11; i++) {
+            // $('card' + i).next("div").text(response.collection.items[i].data[0].title);
+            var title = response.collection.items[i].data[0].title;
+            var links = response.collection.items[i].links[0].href;
+            var description = response.collection.items[i].data[0].description;
+            var date = response.collection.items[i].data[0].date_created;
+            
+            $(`#card-${i}`).find(".tile__title").text(title);
+            $(`#card-${i}`).find(".tile__subtitle").text(date.substring(0,10));
+            $(`#card-${i}`).find(".card-body").text(description.substring(0,200).concat("..."));  
+            $(`#card-${i}`).find(".card-image").children().attr("src", links);
+            $('div[class="results grid-r-3 grid-c-8"]').attr("style","display:block");
+        };
+    });
+};
 
-    success: function (data) {
-      console.log (data);
-      I NEED HELP GETTING THIS TO GO INTO THE DIFFERENT </div>. We need to change where results populate (only one per area).  Maybe we need to use a ".then" function. //
-      $("#search").html("<div class='container-fluid mt-3'>").append("<div class='row'>");
-
-        if (data.list[i].dt_img) {
-
-          // Create HTML elements. // 
-          var col = $("<div>").addClass("col-11 bg-success container-primary text-white");
-          var body = $("<div>").addClass("col-sm bg-warning ml-1 mb-1 d-flex align-items-end  flex-row" style="height:200px");
-          var title = $("<div>").addClass("align-text-bottom").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-          // NO, NO, NO! var img = $("<img>").attr("src", "https://images-api.nasa.gov/search?q=" + data.list[i]. + ".png");
-
-          // I need to merge all this together... //
-          col.append(card.append(body.append(title)));
-          $("#search").append(col);
-
-    }
-
-  });
-
-}
-
-// Event Listener //
-$(document).ready(function () {
-  // var search = $("btn btn-outline-success my-2 my-sm-0").val;
-  nasaImageSearch;
+$('#search-btn').click(function () {
+    nasaImageSearch();
+    wikiContent($('input[type="text"]').val());
 });
