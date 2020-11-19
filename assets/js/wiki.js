@@ -1,3 +1,4 @@
+
 function wikiContent(searchWord){
    
             
@@ -16,10 +17,6 @@ function wikiContent(searchWord){
     });
 
 }
-
-
-
-
 var today = moment().format("YYYY-MM-DD");
 
 var key="puubY5HJoKpmDOhcrRYD9nZIxJ2we1gX9lXjQoRl";
@@ -33,18 +30,12 @@ $.ajax({
     console.log(response2);
    
     $('#pic-od').find('.card-image').attr("style","background-image: url("+response2.url+")");
-
-    
-
+ 
     $('#pic-od').find('.card-image').attr("onclick","window.open('"+response2.url+"')");
 
- 
-   
+    $('#pic-od').find('.tile__container').text(response2.title);
+    $('#pic-od').find('.tile__container').parent().next().text(response2.explanation);
 
-
-$('#pic-od').find('.tile__container').text(response2.title);
-$('#pic-od').find('.tile__container').parent().next().text(response2.explanation);
-
-$(".card-footer").text(response2.date);
+    $(".card-footer").text(response2.date);
 
 });
