@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html id="page">
    <head>
-      <title>Getting Started with Cirrus</title>
+      <title>NASA Search Engine</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
       <meta charset="UTF-8"/>
 
@@ -16,7 +16,7 @@
    </head>
 
    
-   <!--Body and Main-->
+   <!--Body-->
    <body style="background-image: url(assets/solo-stars.jpg)">
 
         <!--Header Img-->
@@ -41,17 +41,18 @@
                </div>
     
                <div class="nav-right">
-                <div class="input-control" style="width: 300px;">
+                <div class="input-control" >
                     <input type="text" placeholder="Enter Keywords (Ex. Moon)"></input>
                 </div>
 
-                  <div class="nav-item has-sub toggle-hover" id="dropdown">
-                     <a class="nav-dropdown-link">Menu</a> 
-                     <ul class="dropdown-menu dropdown-animated" role="menu">
-                        <li role="menu-item"><a href="#fav-imgs">Favorite Images</a></li>
-                        <li role="menu-item"><a href="#footer">Developers</a></li>
-                     </ul>
-                  </div>
+                <div id="search-btn">
+                    <button class="outline btn-dark">Search</button>
+                </div>
+
+                <div id="developers-btn">
+                    <a href="#footer"><button class="outline btn-dark">Meet the Developers</button> </a>
+                </div>
+
                </div>
             </div>
          </div>
@@ -60,16 +61,18 @@
     <main class="grid grid-gap-3 u-text-center">
 
             <!--Picture of the Day-->
-            <div id="pic-od" class="pod grid-c-4 grid-r-6">
-                <p style="background-color: aliceblue; color: black; border-radius: 5px; margin-bottom: 0;"><b>Picture of the Day</b></p>
+            <div id="pic-od" class="pod grid-c-4 grid-r-6" >
+                <p class="head"><b>Picture of the Day</b></p>
 
-                <div class="card"  style="background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
+                <div class="card-pod">
                     <div class="card-container">
-                        <div class="card-image">
+                        <a href="!#">
+                            <div class="card-image">
                             <img src="" alt="">
                         </div>
+                        </a>
                     </div>
-                    <div class="content">
+                    <div class="content" >
                         <div class="space"></div>
                         <div class="tile tile--center">
                 
@@ -86,10 +89,9 @@
                 </div>
                 <!--Favorites-->
             <div class="fav-imgs grid-c-4 grid-r-6" id="fav-imgs">
-                <p style="background-color: aliceblue; color: black; border-radius: 5px; margin-bottom: 0;">
-                    <b style="font-size: large;">Favorited Images</b></p>
+                <p><b >Favorited Images</b></p>
                 
-                <section style="background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
+                <section class="grid-fav">
                     <div class="row u-center">
                         <div id="fav-1" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
                         <div id="fav-2" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
@@ -102,18 +104,18 @@
                         <div id="fav-9" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
     
                     </div> 
-                    <div>
+                   <!-- <div>
                         <button>Clear All</button>
-                    </div>  
+                    </div>  -->
                     </div>
                     </div>
                 </section>
                 
         <!--Welcome Message-->
             <div class="welcome grid-c-8 grid-r-3">
-                <h2 style="background-color: aliceblue; color: black;border-radius: 5px; margin-bottom: 0;"><b>Welcome</b></h2>
-                <div style="background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
-                    <p style="background-color: aliceblue; opacity: 100%; padding: 10px;">
+                <h2><b>Welcome</b></h2>
+                <div>
+                    <p >
                      Please welcome yourself to the final frontier, here you can enter any word into the search engine and blast off to your results.
                      You will discover images of the universe beyond and information on these wonders. Feel free to like your favorite images with
                      the heart button, they will be added to your collection for a later date.
@@ -126,10 +128,10 @@
             
         <!--Results of Search-->
             <div class="results grid-r-3 grid-c-8">
-                <p style="background-color: aliceblue; color: black; border-radius: 5px; margin-bottom: 0;"><b>Results</b></p>
+                <p class="results-p"><b>Results</b></p>
             
             <!--Rows-->   
-            <div class="wrap-cards row " style="justify-content: space-between; background-color: antiquewhite; opacity: 70%; border-radius: 10px; padding:10px;">
+            <div class="wrap-cards row " >
              
                 <!--Info Card-->
                 <div class="card" id="info-card">
@@ -137,7 +139,7 @@
                         
                         <div class="info-icon "> 
                             <a href="#"> 
-                            <i class="fas fa-user-astronaut fa-2x text-blue-600 bg-blue-100 p-3" viewBox="0 0 320 512" style="border-radius: 100%; height: 4.75rem; width: 4.75rem;" aria-hidden="true">
+                            <i class="fas fa-user-astronaut fa-2x text-blue-600 bg-blue-100 p-3" viewBox="0 0 320 512" aria-hidden="true">
                             </i> </a> 
                         </div>
                         <p id="projectname" class="title mt-2 mb-0">Search Title</p>
@@ -474,7 +476,7 @@
                                 <li class="footer__list-item">Frederick Thomas</li>
                             </a>
                             <a href="https://github.com/hhutku">
-                                <li class="footer__list-item">Hasan Utku-win</li>
+                                <li class="footer__list-item">Hasan Utku</li>
                             </a>
                             <a href="https://github.com/ywen26">
                                 <li class="footer__list-item">Yuwen Yu</li>
