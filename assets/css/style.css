@@ -9,7 +9,8 @@
 .header {
     position: sticky; 
     top: 0;
-    width: 100%;  
+    width: 100%;
+    margin-bottom: 50px; 
 }
 
 main {
@@ -40,6 +41,8 @@ margin-right: 20px;
     width: 300px;
 }
 /*favorite images section and spacing */
+
+
 .fav-img {
     padding-bottom: 5px;
 }
@@ -51,3 +54,6 @@ margin-right: 20px;
     object-fit: cover;
     border-radius: 5%;
  }
+
+
+ 
