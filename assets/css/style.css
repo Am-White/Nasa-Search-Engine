@@ -12,6 +12,9 @@
     width: 100%;
     margin-bottom: 50px; 
 }
+.header-brand {
+    align-items: center;
+}
 
 
 /*nav buttons */
@@ -33,9 +36,23 @@ main {
     margin-right: 20px;
 }
 
-/*picture of the day*/
+/*picture of the day margin*/
 .pod {
 margin-right: 20px;
+}
+
+/*picture of the day*/
+#pic-od .head{
+    background-color: aliceblue; 
+    color: black; 
+    border-radius: 5px; 
+    margin-bottom: 0;
+ }
+
+.card-pod {
+    background-color: rgba(250, 235, 215, 0.747); 
+    border-radius: 10px; 
+    padding:10px;
 }
 
 /*like button on result cards */
@@ -105,19 +122,6 @@ margin-right: 20px;
     padding:10px;
 }
 
- /*picture of the day*/
- #pic-od .head{
-    background-color: aliceblue; 
-    color: black; 
-    border-radius: 5px; 
-    margin-bottom: 0;
- }
-
- .card-pod {
-    background-color: rgba(250, 235, 215, 0.747); 
-    border-radius: 10px; 
-    padding:10px;
-}
 
 .results .results-p {
     background-color: aliceblue; 
@@ -136,10 +140,7 @@ margin-right: 20px;
     height: 4.75rem; 
     width: 4.75rem;
 }
-.card-image img {
-    height:100%;
-    object-fit: cover;
-}
+
 
 #nasa-search{
     pointer-events: none;
@@ -150,4 +151,9 @@ margin-right: 20px;
     .info-card {
         width: auto;
     }
+
+    .welcome {
+        margin-top: 20px;
+    }
+    
 }
