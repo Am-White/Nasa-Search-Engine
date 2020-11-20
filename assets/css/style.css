@@ -13,6 +13,7 @@
     margin-bottom: 50px; 
 }
 
+
 /*nav buttons */
 .input-control {
     width: 300px;
@@ -43,6 +44,10 @@ margin-right: 20px;
 }
 
 /*welcome card */
+.welcome {
+    margin-bottom: 20px;
+}
+
 .welcome h2 {
     background-color: aliceblue; 
     color: black;
@@ -130,4 +135,19 @@ margin-right: 20px;
     border-radius: 100%; 
     height: 4.75rem; 
     width: 4.75rem;
+}
+.card-image img {
+    height:100%;
+    object-fit: cover;
+}
+
+#nasa-search{
+    pointer-events: none;
+}
+
+/*responsive info box to screen siz */
+@media (max-width: 900px) {
+    .info-card {
+        width: auto;
+    }
 }
