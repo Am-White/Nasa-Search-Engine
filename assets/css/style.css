@@ -59,6 +59,9 @@ margin-right: 20px;
 .card .button:hover .icon{
     color: rgb(206, 26, 26);
 }
+ .card .mobile-title{
+    padding: 1rem 0 0;    
+}
 
 /*welcome card */
 .welcome {
@@ -146,7 +149,7 @@ margin-right: 20px;
     pointer-events: none;
 }
 
-/*responsive info box to screen siz */
+/*responsive info box to screen size and welcome spacing */
 @media (max-width: 900px) {
     .info-card {
         width: auto;
