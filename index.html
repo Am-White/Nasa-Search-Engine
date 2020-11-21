@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 <html id="page">
    <head>
-      <title alt="The title to the browser tab you are currently on, is 'NASA Search Engine' connectected to the website url 'https://am-white.github.io/ProjectUno/'" title="Browser Tab">NASA Search Engine</title>
-      
+      <title>NASA Search Engine</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
       <meta charset="UTF-8"/>
+
       <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
-      
-      <link rel="shortcut icon" type="image/png" href="Assets/images/apple-touch-icon.png"> <!--Cool Space Favicon Added-->
       <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/> 
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" ></script> 
       <link rel="stylesheet" href="assets/css/style.css">
+      <script src="assets/js/script.js"></script>
    </head>
 
    
    <!--Body-->
-   <body style="background-image: url(Assets/images/solo-stars.jpg)" alt="Space, black and dark, with many stars filling the void, and emptiness." title="solo-stars">
+   <body style="background-image: url(assets/solo-stars.jpg)">
 
-        
         <!--Header Img-->
-        <div class="header-container u-position-static" style="background-image: url(Assets/images/earth.jpg); width: 100%;" alt="Majestic background image of the planet Earth, from a diagonal view (picture taken as object orbitted the Earth), with stars and space in the background." title="Earth">
+        <div class="header-container u-position-static" style="background-image: url(assets/earth.jpg); width: 100%;">
             <div class="header-brand" >
-                <h1 alt="Main Header: 'SPACE IS THE PLACE.'" title="SPACE IS THE PLACE">SPACE IS THE PLACE</h1>
+                <h1>SPACE IS THE PLACE</h1>
             </div>
         </div>
 
-        
         <!--Header Nav-->
         <div class="header unselectable header-animated">
             <div class="header-brand">
                <div class="nav-item no-hover">
-                  <h2 class="title" alt="A search engine design to populate images and information gained by NASA." title="NASA Search Engine">NASA Search Engine</h2>
+                  <h2 class="title">NASA Search Engine</h2>
+                  
+                  <div class="nav-center">
+                    <div class="nav-item text-center"> <a href="https://www.solarsystemscope.com/"> <span class="icon"> <i class="fas fal fa-space-shuttle fa-2x" aria-hidden="true"></i> </span> </a> </div>
+                 </div>
                </div>
             </div>
 
             <!--Nav Menu-->
-            <div class="header-nav" id="header-menu">
-                <div class="nav-left">
-                    <div class="nav-item text-center">
-                        <a href="https://www.solarsystemscope.com/">
-                            <span class="icon"><i class="fas fal fa-space-shuttle fa-2x" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-    
+            <div class="header-brand nav-left" id="header-menu">
                <div class="nav-right">
                 <div class="input-control" >
-                    <input type="text" placeholder="Enter Keywords (Ex. Moon)" alt="Please enter your search query, here." title="Search"></input>
+                    <input type="text" placeholder="Enter Keywords (Ex. Moon)"></input>
                 </div>
 
                 <div id="search-btn">
@@ -62,11 +55,10 @@
 
                </div>
             </div>
-        </div>
+         </div>
 
-    
-        <!--Main-->
-        <main class="grid grid-gap-3 u-text-center">
+    <!--Main-->
+    <main class="grid grid-gap-0 u-text-center">
 
             <!--Picture of the Day-->
             <div id="pic-od" class="pod grid-c-4 grid-r-6" >
@@ -80,10 +72,8 @@
                         </div>
                         </a>
                     </div>
-
                     <div class="content" >
                         <div class="space"></div>
-                        
                         <div class="tile tile--center">
                 
                             <div class="tile__container">
@@ -104,399 +94,347 @@
                 
                 <section class="grid-fav">
                     <div class="row u-center">
-                        <div id="fav-1" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
-                        
-                        
-                        <div id="fav-2" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
-
-                        
-                        <div id="fav-3" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
-
-                        
-                        <div id="fav-4" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
-
-                        
-                        <div id="fav-5" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
-
-                        
-                        <div id="fav-6" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg alt="">
-                            </a>
-                        </div>
-
-                        
-                        <div id="fav-7" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
-
-                        
-                        <div id="fav-8" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
-
-                        
-                        <div id="fav-9" class="fav-img">
-                            <a href="#" class="thumbnail">
-                                <img src="Assets/images/spiral-nebula.jpg" alt="">
-                            </a>
-                        </div>
+                        <div id="fav-1" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-2" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-3" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-4" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-5" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-6" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-7" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-8" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+                        <div id="fav-9" class="fav-img"><a href="#" class="thumbnail"><img src="assets/spiral-nebula.jpg" alt=""></a></div>
+    
                     </div> 
-                    
-                    <!-- <div>
+                   <!-- <div>
                         <button>Clear All</button>
                     </div>  -->
                     </div>
+                    </div>
                 </section>
+                
+        <!--Welcome Message-->
+            <div class="welcome grid-c-8 grid-r-3">
+                <h2><b>Welcome</b></h2>
+                <div>
+                    <p >
+                     Please welcome yourself to the final frontier, here you can enter any word into the search engine and blast off to your results.
+                     You will discover images of the universe beyond and information on these wonders. Feel free to like your favorite images with
+                     the heart button, they will be added to your collection for a later date.
+                    </br>
+                    Somewhere among the stars on this page, there is a hidden button that will blast you to a wonderful super nova of knowledge. Launch
+                    if you dare and explore our solar system.
+                    </p>
+                </div>
             </div>
-                    
-                    
-            <!--Welcome Message-->
-                <div class="welcome grid-c-8 grid-r-3">
-                    <h2><b>Welcome</b></h2>
-                    <div>
-                        <p >
-                        Please welcome yourself to the final frontier, here you can enter any word into the search engine and blast off to your results.
-                        You will discover images of the universe beyond and information on these wonders. Feel free to like your favorite images with
-                        the heart button, they will be added to your collection for a later date.
-                        </br>
-                        Somewhere among the stars on this page, there is a hidden button that will blast you to a wonderful super nova of knowledge. Launch
-                        if you dare and explore our solar system.
-                        </p>
+            
+        <!--Results of Search-->
+            <div class="results grid-r-3 grid-c-8">
+                <p class="results-p"><b>Results</b></p>
+            
+            <!--Rows-->   
+            <div class="wrap-cards row " >
+             
+                <!--Info Card-->
+                <div class="card" id="info-card">
+                    <div class="content info-card u-text-center pt-3">
+                        
+                        <div class="info-icon "> 
+                            <a href="#"> 
+                            <i class="fas fa-user-astronaut fa-2x text-blue-600 bg-blue-100 p-3" viewBox="0 0 320 512" aria-hidden="true">
+                            </i> </a> 
+                        </div>
+                        <p id="projectname" class="title mt-2 mb-0">Search Title</p>
+                        <p>Basic information on what keyword the user just searched.</p>
                     </div>
                 </div>
-                
-            <!--Results of Search-->
-                <div class="results grid-r-3 grid-c-8">
-                    <p class="results-p"><b>Results</b></p>
-                
-                    <!--Rows-->   
-                    <div class="wrap-cards row " >
-                    
-                        <!--Info Card-->
-                        <div class="card" id="info-card">
-                            <div class="content info-card u-text-center pt-3">
-                                
-                                <div class="info-icon "> 
-                                    <a href="#"> 
-                                    <i class="fas fa-user-astronaut fa-2x text-blue-600 bg-blue-100 p-3" viewBox="0 0 320 512" aria-hidden="true">
-                                    </i> </a> 
-                                </div>
-                                <p id="projectname" class="title mt-2 mb-0">Search Title</p>
-                                <p>Basic information on what keyword the user just searched.</p>
-                            </div>
-                        </div>
 
-                        <!--Regular size Cards-->
-                        <!--Card 1-->
-                        <div class="reg-card card slide-up" id="card-1">
-                            <div class="card-container">
-                                <div class="card-image"> 
-                                    <img src="" alt=""></div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
+                <!--Regular size Cards-->
+                <!--Card 1-->
+                <div class="reg-card card slide-up" id="card-1">
+                    <div class="card-container">
+                        <div class="card-image"> 
+                            <img src="" alt=""></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
                                 </div>
                             </div>
-                            <div class="card-body content">
-                                <p>information on image searched</p>
-                            </div>
-                            
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card 2-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-2">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt=""></div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Three-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-3">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Four-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;"id="card-4">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Five-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-5">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Six-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-6">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Seven-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-7">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Eight-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-8">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Nine-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-9">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        <!--Card Ten-->
-                        <div class="reg-card card slide-up" style="max-width: 300px;" id="card-10">
-                            <div class="card-container">
-                                <div class="card-image">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="mobile-title">
-                                <div class="content">
-                                    <div class="tile">
-                                        <div class="tile__container">
-                                            <p class="tile__title">title of image</p>
-                                            <p class="tile__subtitle">subtitle (maybe)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content">
-                                <p>information on image searched.</p>
-                            </div>
-
-                            <button class="button">
-                                <span class="icon is-small">
-                                <i class="fas fa-heart fa-2x"></i>
-                                </span>
-                            </button>
                         </div>
                     </div>
-                </div>            
-        </main>
+
+                    <div class="content"></div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card 2-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-2">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt=""></div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Three-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-3">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Four-->
+                <div class="reg-card card slide-up" style="max-width: 300px;"id="card-4">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Five-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-5">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Six-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-6">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Seven-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-7">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Eight-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-8">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Nine-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-9">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Card Ten-->
+                <div class="reg-card card slide-up" style="max-width: 300px;" id="card-10">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile-title">
+                        <div class="content">
+                            <div class="tile">
+                                <div class="tile__container">
+                                    <p class="tile__title">title of image</p>
+                                    <p class="tile__subtitle">subtitle (maybe)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body content">
+                        
+                    </div>
+
+                    <button class="button">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            </div>
+            
+    </main>
+
 
 
         <!--Footer-->
-        <footer class="footer" id="footer" style="background-image: url(Assets/images/earth.jpg)">
-            <h6 class="footer__title white uppercase">Meet the Developers</h6>
+        <footer class="footer" id="footer" style="background-image: url(assets/earth.jpg)">
+            <h4 class="footer__title white uppercase">Meet the Developers</h4>
             <div class="content">
                 <div class="divider"></div>
 
@@ -552,9 +490,11 @@
             <p class="subtitle"> © 2020.</p>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" ></script>
-        <script src="Assets/js/fav.js"></script>
-        <script src="Assets/js/results.js"></script>
-        <script src="Assets/js/wiki.js"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/wiki.js"></script>
+    <script src="./assets/js/result.js"></script>
+
+    <script src="assets/js/script.js"></script>
    </body>
 </html>
