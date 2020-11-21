@@ -1,10 +1,10 @@
 localStorage.clear();
 
-var favPhotos = ["Assets/images/Solar_eclipse.jpg","Assets/images/andromeda_galaxy.jpg",
-"Assets/images/spiral-nebula.jpg","Assets/images/Black_hole_friday.jpg",
-"Assets/images/earth_and_moon.jpg","Assets/images/the_whirlpool_galaxy.jpg",
-"Assets/images/starFormation.jpg","Assets/images/magnetic_monster.jpg",
-"Assets/images/Black_hole_friday.jpg"];
+var favPhotos = ["./nasaPhotos/Solar_eclipse.jpg","./nasaPhotos/andromeda_galaxy.jpg",
+"./nasaPhotos/thebubble_Nebula.jpg","./nasaPhotos/Black_hole_friday.jpg",
+"./nasaPhotos/earth_and_moon.jpg","./nasaPhotos/the_whirlpool_galaxy.jpg",
+"./nasaPhotos/starFormation.jpg","./nasaPhotos/magnetic_monster.jpg",
+"./nasaPhotos/Black_hole_friday.jpg"];
 
 
 var lastfavPhotos = favPhotos;
