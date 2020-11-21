@@ -47,10 +47,31 @@ Users can then hover over their result images and click one of the heart buttons
 
 ## Images
 
-![App On Window Load]()
-![Picture of the Day]()
+### Application Upon Load
+#### Laptop
+![App On Window Load](assets/images/AppUponLoad.png)
+#### Mobile Phone
+![...](...)
+
+
+### Picture of the Day
+#### Laptop
+![Picture of the Day](assets/images/PicOfTheDay.png)
+#### Mobile Phone 
+![...](...)
+
+### Query and Results
+#### Laptop
+![...](...)
 ![Result cards and Favorite Button]()
-![Favorite Images]()
+#### Mobile Phone 
+![...](...)
+
+### Favorites
+#### Laptop Phone 
+![...](...)
+#### Mobile Phone 
+![...](...)
 
 
 
