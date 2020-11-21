@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 $("#send").on("click", function(event) {
             event.preventDefault();
 
