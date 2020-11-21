@@ -63,17 +63,15 @@ Users can then hover over their result images and click one of the heart buttons
 
 ### Query and Results
 #### Laptop
-![](...)
-![Result cards and Favorite Button]()
+![Search Queried in Search Engine](assets/images/ResultsQuery_Laptop.png) ![Results Populated on Laptop](assets/images/ResultsPopulated_Laptop.png)
 #### Mobile Phone 
-![...](...)
+![Search Query Displayed On Mobile](assets/images/Results_SearchQuery_Mobile.jpg) ![Results Populated From Wiki API on Mobile](assets/images/ResultsofQuery_Mobile.jpg)
 
 ### Favorites
 #### Laptop Phone 
-![...](...)
+![Display of Default Photos in "Favorites" Section, with Photo Displaying Heart Icon (not selected), on Laptop](assets/images/FavSectonWithHeartIcon_Laptop.png) ![Display of Default Photos in "Favorites" Section, with Photo Displaying Heart Icon (Selected), on Laptop](assets/images/FavSectionHeartSelected_Laptop.png) 
 #### Mobile Phone 
-![...](...)
-
+![Favorites Section Displayed on Mobile](assets/images/Fav_Mobile.jpg) ![Photo Selected Populating Favorite Section](assets/images/FavPhotoPopulatedInFavSeaction_Mobile.jpg) ![Ability to view a Favorite Photo, on Mobile](assets/images/FavPhotoSelected_Mobile.jpg)
 
 
 ---
