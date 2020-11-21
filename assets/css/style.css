@@ -2,8 +2,9 @@
 /*-----------------------*/
 /*header image */
 .header-container {
-    height: 500px;
+    height: 460px;
     margin: 0;
+    
 }
 /*nav bar sticky when scroll */
 .header {
@@ -144,6 +145,14 @@ margin-right: 20px;
     width: 4.75rem;
 }
 
+/* CS3
+.footer {
+    line-height: 10px;
+    
+   
+}
+
+/* =======
 
 #nasa-search{
     pointer-events: none;
@@ -160,3 +169,4 @@ margin-right: 20px;
     }
     
 }
+/* main
