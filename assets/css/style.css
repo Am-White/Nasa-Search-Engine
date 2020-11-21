@@ -144,7 +144,6 @@ margin-right: 20px;
     width: 4.75rem;
 }
 
-
 #nasa-search{
     pointer-events: none;
 }
@@ -160,6 +159,12 @@ margin-right: 20px;
     }
     
 }
+
+
+.card img {
+    object-fit: cover
+}
+
 
  .card:hover .mobile-title {
        margin-top: -6rem;
@@ -179,4 +184,5 @@ margin-right: 20px;
 .tile__container{
 height:90px;
 }
+
 
