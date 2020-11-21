@@ -1,9 +1,9 @@
-
 /*-----------------------*/
 /*header image */
 .header-container {
-    height: 500px;
+    height: 460px;
     margin: 0;
+    
 }
 /*nav bar sticky when scroll */
 .header {
@@ -12,6 +12,10 @@
     width: 100%;
     margin-bottom: 50px; 
 }
+.header-brand {
+    align-items: center;
+}
+
 
 /*nav buttons */
 .input-control {
@@ -32,17 +36,38 @@ main {
     margin-right: 20px;
 }
 
-/*picture of the day*/
+/*picture of the day margin*/
 .pod {
 margin-right: 20px;
+}
+
+/*picture of the day*/
+#pic-od .head{
+    background-color: aliceblue; 
+    color: black; 
+    border-radius: 5px; 
+    margin-bottom: 0;
+ }
+
+.card-pod {
+    background-color: rgba(250, 235, 215, 0.747); 
+    border-radius: 10px; 
+    padding:10px;
 }
 
 /*like button on result cards */
 .card .button:hover .icon{
     color: rgb(206, 26, 26);
 }
+ .card .mobile-title{
+    padding: 1rem 0 0;    
+}
 
 /*welcome card */
+.welcome {
+    margin-bottom: 20px;
+}
+
 .welcome h2 {
     background-color: aliceblue; 
     color: black;
@@ -100,19 +125,6 @@ margin-right: 20px;
     padding:10px;
 }
 
- /*picture of the day*/
- #pic-od .head{
-    background-color: aliceblue; 
-    color: black; 
-    border-radius: 5px; 
-    margin-bottom: 0;
- }
-
- .card-pod {
-    background-color: rgba(250, 235, 215, 0.747); 
-    border-radius: 10px; 
-    padding:10px;
-}
 
 .results .results-p {
     background-color: aliceblue; 
@@ -132,7 +144,25 @@ margin-right: 20px;
     width: 4.75rem;
 }
 
-/* #footer .footer {
-    background-image: url(Assets/images/spacecraftOrbitingEarth.gif);
-    background-size: cover;
-} */
+/* CS3
+.footer {
+    line-height: 10px;
+    
+   
+}
+/* =======
+#nasa-search{
+    pointer-events: none;
+}
+/*responsive info box to screen size and welcome spacing */
+@media (max-width: 900px) {
+    .info-card {
+        width: auto;
+    }
+
+    .welcome {
+        margin-top: 20px;
+    }
+    
+}
+/* main
