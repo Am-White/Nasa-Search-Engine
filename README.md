@@ -47,11 +47,31 @@ Users can then hover over their result images and click one of the heart buttons
 
 ## Images
 
-![App On Window Load]()
-![Picture of the Day]()
-![Result cards and Favorite Button]()
-![Favorite Images]()
+### Application Upon Load
+#### Laptop
+![Application Load on Laptop](assets/images/AppUponLoad.png)
+#### Mobile Phone
+![Application On Mobile Load](assets/images/ApplicationOnLoad_Mobile.jpg)
 
+
+### Picture of the Day
+#### Laptop
+![Photo Displayed on Laptop](assets/images/PicOfTheDay_Laptop.png) ![Photo's Information and Date Displayed on Laptop](assets/images/PicOfTheDay_Info_Date_Laptop.png)
+#### Mobile Phone 
+![Photo Displayed On Mobile](assets/images/PhotoOfDayDisplayed_Mobile.jpg) ![Photo's Information and Date Displayed on Mobile](assets/images/PhotoOfDay_Info_Date_Mobile.jpg)
+
+
+### Query and Results
+#### Laptop
+![Search Queried in Search Engine](assets/images/ResultsQuery_Laptop.png) ![Results Populated on Laptop](assets/images/ResultsPopulated_Laptop.png)
+#### Mobile Phone 
+![Search Query Displayed On Mobile](assets/images/Results_SearchQuery_Mobile.jpg) ![Results Populated From Wiki API on Mobile](assets/images/ResultsofQuery_Mobile.jpg)
+
+### Favorites
+#### Laptop Phone 
+![Display of Default Photos in "Favorites" Section, with Photo Displaying Heart Icon (not selected), on Laptop](assets/images/FavSectonWithHeartIcon_Laptop.png) ![Display of Default Photos in "Favorites" Section, with Photo Displaying Heart Icon (Selected), on Laptop](assets/images/FavSectionHeartSelected_Laptop.png) 
+#### Mobile Phone 
+![Favorites Section Displayed on Mobile](assets/images/Fav_Mobile.jpg) ![Photo Selected Populating Favorite Section](assets/images/FavPhotoPopulatedInFavSeaction_Mobile.jpg) ![Ability to view a Favorite Photo, on Mobile](assets/images/FavPhotoSelected_Mobile.jpg)
 
 
 ---
